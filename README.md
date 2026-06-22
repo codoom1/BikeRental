@@ -7,6 +7,10 @@ Code and data accompanying the published article:
 > calendar conditions: A semi-parametric approach.** *Scientific African,
 > 24*, e02211. <https://doi.org/10.1016/j.sciaf.2024.e02211>
 
+**Companion data package:** [`bikerentaldata`](https://github.com/codoom1/BikeRentalData)
+downloads,
+prepares, validates, and loads the bike-rental data used by this analysis.
+
 ## Overview
 
 This study examines how weather and calendar conditions are associated with
@@ -61,9 +65,6 @@ install.packages(c("AER", "gratia", "pander", "yarrr"))
 
 The analysis continues without these optional packages and prints a message
 identifying the output that will be skipped.
-
-To rerun the preprocessing workflow, also install `lubridate`, `purrr`,
-`rvest`, and `tibble`.
 
 ## Run the analysis
 
