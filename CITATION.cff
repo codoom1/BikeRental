@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the published article below."
+title: "Code and data for modeling daily bike-rental dynamics"
+type: software
+authors:
+  - family-names: Odoom
+    given-names: Christopher
+  - family-names: Boateng
+    given-names: Alexander
+  - family-names: Fobi Mensah
+    given-names: Sarah
+  - family-names: Maposa
+    given-names: Daniel
+repository-code: "https://github.com/codoom1/BikeRental"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Modeling of the daily dynamics in bike rental system using weather and calendar conditions: A semi-parametric approach"
+  authors:
+    - family-names: Odoom
+      given-names: Christopher
+    - family-names: Boateng
+      given-names: Alexander
+    - family-names: Fobi Mensah
+      given-names: Sarah
+    - family-names: Maposa
+      given-names: Daniel
+  journal: Scientific African
+  volume: 24
+  year: 2024
+  doi: "10.1016/j.sciaf.2024.e02211"
+  start: e02211
