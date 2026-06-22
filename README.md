@@ -10,6 +10,8 @@ Code and data accompanying the published article:
 **Companion data package:** [`bikerentaldata`](https://github.com/codoom1/BikeRentalData)
 downloads,
 prepares, validates, and loads the bike-rental data used by this analysis.
+It also reports current system coverage and station locations and supports
+Capital Bikeshare's legacy annual archives from 2010–2017.
 
 ## Overview
 
@@ -93,6 +95,14 @@ build_bike_rental_data(
   weather_cache = "data/processed/weather_data.csv",
   output_file = "data/paperbike_data.csv"
 )
+```
+
+Explore archive and station coverage with:
+
+```r
+available_trip_data()
+current_system_info()
+summarize_trip_locations("data/raw")
 ```
 
 The package downloads official monthly trip archives, aggregates trips,
