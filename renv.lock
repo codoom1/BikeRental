@@ -657,7 +657,7 @@
       "RemoteUsername": "codoom1",
       "RemoteRepo": "BikeRentalData",
       "RemoteRef": "main",
-      "RemoteSha": "193a354524cd8680209b6489750973db55165fa3"
+      "RemoteSha": "6334e64494609c4dbd87e9675553d473dac3d824"
     },
     "bit": {
       "Package": "bit",
