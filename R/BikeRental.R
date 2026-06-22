@@ -8,7 +8,7 @@ rm(list = ls())
 
 ## Load required packages
 required_packages <- c(
-  "corrplot", "dbscan", "ggplot2", "mgcv", "readr", "tidyverse"
+  "bikerentaldata", "corrplot", "dbscan", "ggplot2", "mgcv", "tidyverse"
 )
 
 missing_packages <- required_packages[
@@ -87,7 +87,7 @@ data_path <- file.path("data", "paperbike_data.csv")
 if (!file.exists(data_path)) {
   stop("Data file not found. Run this script from the repository root.")
 }
-dat <- read_csv(data_path)
+dat <- bikerentaldata::load_bike_rentals(data_path)
 head(dat)
 
 ##Renaming some columns

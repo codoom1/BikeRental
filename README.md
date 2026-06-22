@@ -20,8 +20,7 @@ casual rentals. The processed dataset covers April 1, 2020 through May 31,
 ```text
 .
 ├── R/
-│   ├── BikeRental.R          # Exploratory analysis and statistical models
-│   └── Scrape.R              # Data collection and preprocessing workflow
+│   └── BikeRental.R          # Exploratory analysis and statistical models
 ├── data/
 │   ├── DATA_LICENSE.md       # Dataset terms and attribution
 │   └── paperbike_data.csv    # Processed analysis dataset
@@ -47,9 +46,11 @@ renv::restore()
 Alternatively, install the required analysis packages directly:
 
 ```r
+install.packages("remotes")
 install.packages(c(
-  "corrplot", "dbscan", "ggplot2", "mgcv", "readr", "tidyverse"
+  "corrplot", "dbscan", "ggplot2", "mgcv", "tidyverse"
 ))
+remotes::install_github("codoom1/BikeRentalData")
 ```
 
 For all optional figures, formatted tables, and diagnostics, also install:
@@ -77,21 +78,30 @@ The script reads `data/paperbike_data.csv`, fits the quasi-Poisson generalized
 additive models, and saves all generated plots under `figures/` as
 publication-quality PNG files.
 
-`R/Scrape.R` rebuilds the processed dataset for April 2020 through May 2023.
-Download the 38 monthly Capital Bikeshare trip files separately, place them
-under `data/raw/` using the filename pattern
-`YYYYMM-capitalbikeshare-tripdata.csv`, and run:
+Dataset downloading and preprocessing now live in the companion
+[`bikerentaldata`](https://github.com/codoom1/BikeRentalData) R package.
+After installing the package, rebuild the dataset with:
 
 ```r
-source("R/Scrape.R")
+library(bikerentaldata)
+
+build_bike_rental_data(
+  start_date = "2020-04-01",
+  end_date = "2023-05-31",
+  raw_dir = "data/raw",
+  weather_cache = "data/processed/weather_data.csv",
+  output_file = "data/paperbike_data.csv"
+)
 ```
 
-The script aggregates trips by date, retrieves daily weather observations
-from Time and Date, joins both sources by date, adds calendar variables, and
-writes `data/paperbike_data.csv`. Weather results are cached at
-`data/processed/weather_data.csv`, so subsequent runs do not repeat the full
-weather collection. Websites and source-file schemas may change; the included
-processed dataset remains the recommended input for reproducing the analysis.
+The package downloads official monthly trip archives, aggregates trips,
+retrieves or reuses cached weather observations, joins records by date, adds
+calendar variables, validates the result, and writes
+`data/paperbike_data.csv`. Fresh package builds use Washington National
+Airport ASOS observations from the Iowa Environmental Mesonet, while the
+published dataset used Time and Date weather records; values may therefore
+differ slightly. The included processed dataset remains the recommended input
+for reproducing the published analysis.
 
 ## Data dictionary
 
