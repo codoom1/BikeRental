@@ -626,11 +626,11 @@
     },
     "bikerentaldata": {
       "Package": "bikerentaldata",
-      "Version": "0.2.1",
+      "Version": "0.3.0",
       "Source": "GitHub",
-      "Title": "Build Daily Capital Bikeshare Analysis Data",
+      "Title": "Historical U.S. Bike-Share Trip Data Tools",
       "Authors@R": "c( person( given = \"Christopher\", family = \"Odoom\", role = c(\"aut\", \"cre\"), email = \"odoomchristopher22@gmail.com\" ) )",
-      "Description": "Discovers and downloads official Capital Bikeshare annual and monthly trip archives, summarizes station locations, aggregates trips into daily registered and casual rental counts, combines them with daily weather observations, adds calendar variables, and validates the resulting analysis data. The package contains processing code but does not redistribute the full third-party dataset.",
+      "Description": "Discovers, downloads, and standardizes official historical trip archives from Capital Bikeshare, Citi Bike, Divvy, and Bay Wheels. It also summarizes station locations, prepares daily Capital Bikeshare analysis data with weather and calendar variables, and validates processed data. The package contains processing code but does not redistribute the full third-party datasets.",
       "License": "MIT + file LICENSE",
       "URL": "https://github.com/codoom1/BikeRentalData",
       "BugReports": "https://github.com/codoom1/BikeRentalData/issues",
@@ -659,7 +659,7 @@
       "RemoteUsername": "codoom1",
       "RemoteRepo": "BikeRentalData",
       "RemoteRef": "main",
-      "RemoteSha": "ec169ed029ce3d357cd62a3624ec5d8d1bb3f7f3"
+      "RemoteSha": "8f904d115ff98f72872b7fe7b6e27ebaf529aa08"
     },
     "bit": {
       "Package": "bit",

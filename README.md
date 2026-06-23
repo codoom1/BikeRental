@@ -10,8 +10,8 @@ Code and data accompanying the published article:
 **Companion data package:** [`bikerentaldata`](https://github.com/codoom1/BikeRentalData)
 downloads,
 prepares, validates, and loads the bike-rental data used by this analysis.
-It also reports current system coverage and station locations and supports
-Capital Bikeshare's legacy annual archives from 2010–2017.
+It also standardizes historical trip data from Capital Bikeshare, Citi Bike,
+Divvy, and Bay Wheels for multi-city research.
 
 ## Overview
 
