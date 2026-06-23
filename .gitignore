@@ -5,5 +5,9 @@
 .Rproj.user/
 data/raw/
 data/processed/
+data/capital/
+data/citibike/
+data/divvy/
+data/baywheels/
 figures/*
 !figures/.gitkeep
