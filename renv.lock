@@ -626,7 +626,7 @@
     },
     "bikerentaldata": {
       "Package": "bikerentaldata",
-      "Version": "0.3.0",
+      "Version": "0.3.1",
       "Source": "GitHub",
       "Title": "Historical U.S. Bike-Share Trip Data Tools",
       "Authors@R": "c( person( given = \"Christopher\", family = \"Odoom\", role = c(\"aut\", \"cre\"), email = \"odoomchristopher22@gmail.com\" ) )",
@@ -659,7 +659,7 @@
       "RemoteUsername": "codoom1",
       "RemoteRepo": "BikeRentalData",
       "RemoteRef": "main",
-      "RemoteSha": "8f904d115ff98f72872b7fe7b6e27ebaf529aa08"
+      "RemoteSha": "4346b633fa9c0ac894226942fee714fbfdcd2409"
     },
     "bit": {
       "Package": "bit",
