@@ -626,7 +626,7 @@
     },
     "bikerentaldata": {
       "Package": "bikerentaldata",
-      "Version": "0.2.0",
+      "Version": "0.2.1",
       "Source": "GitHub",
       "Title": "Build Daily Capital Bikeshare Analysis Data",
       "Authors@R": "c( person( given = \"Christopher\", family = \"Odoom\", role = c(\"aut\", \"cre\"), email = \"odoomchristopher22@gmail.com\" ) )",
@@ -651,6 +651,7 @@
       "Config/testthat/edition": "3",
       "Encoding": "UTF-8",
       "RoxygenNote": "7.3.3",
+      "Roxygen": "list(markdown = TRUE)",
       "Author": "Christopher Odoom [aut, cre]",
       "Maintainer": "Christopher Odoom <odoomchristopher22@gmail.com>",
       "RemoteType": "github",
@@ -658,7 +659,7 @@
       "RemoteUsername": "codoom1",
       "RemoteRepo": "BikeRentalData",
       "RemoteRef": "main",
-      "RemoteSha": "afdcc9bd748e81c532fa853027b4b1c9a6d65cc9"
+      "RemoteSha": "ec169ed029ce3d357cd62a3624ec5d8d1bb3f7f3"
     },
     "bit": {
       "Package": "bit",
