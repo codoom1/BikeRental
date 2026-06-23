@@ -105,6 +105,24 @@ current_system_info()
 summarize_trip_locations("data/raw")
 ```
 
+For a multi-city study, version 0.4.0 can build one standardized trip table
+for Capital Bikeshare, Citi Bike, Divvy, and Bay Wheels:
+
+```r
+multicity <- build_multicity_data(
+  systems = c("capital", "citibike", "divvy", "baywheels"),
+  start_date = "2024-01-01",
+  end_date = "2024-12-31",
+  data_dir = "data/multicity",
+  calendar = TRUE,
+  weather = TRUE,
+  output_file = "data/multicity_2024.csv"
+)
+```
+
+Use `add_calendar_variables()` or `add_weather_variables()` separately when
+you already have a standardized trip table.
+
 The package downloads official monthly trip archives, aggregates trips,
 retrieves or reuses cached weather observations, joins records by date, adds
 calendar variables, validates the result, and writes
